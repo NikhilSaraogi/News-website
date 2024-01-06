@@ -1,0 +1,57 @@
+// Variables
+
+$border: #ddd;
+$light-gray: #5a5a5a;
+$gray: #1e1e20;
+$yellow: #ffdf3c;
+$white: #fff;
+
+//Extend
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Reset
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  cursor: pointer;
+}
+
+// Others
+
+.none {
+  display: none !important;
+}
+
+@media screen and (min-width: 860px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,414 @@
+.center, .container, .menu .menu-icon, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.none {
+  display: none !important;
+}
+
+@media screen and (min-width: 860px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 24px;
+  }
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+form {
+  width: 15.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 4rem;
+  text-align: left;
+  cursor: default;
+}
+form h1 {
+  font-size: 2.375rem;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 1.125rem;
+}
+form p,
+form label {
+  color: #5a5a5a;
+  letter-spacing: 0.0625rem;
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+form p {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+form label {
+  font-size: 0.5625rem;
+  font-weight: 500;
+  margin-left: 0.875rem;
+  transition: all 0.1s ease-in-out;
+  transform: translateY(1.25rem);
+}
+form label.selected {
+  transform: translateY(-0.25rem);
+  color: #1e1e20;
+}
+form input {
+  margin-bottom: 0.75rem;
+}
+form input,
+form textarea {
+  width: 100%;
+  height: 1.875rem;
+  font-size: 0.75rem;
+  border: none;
+  border-bottom: 0.0625rem solid #ddd;
+  background-color: transparent;
+  padding: 0.375rem;
+}
+form input:active, form input:focus,
+form textarea:active,
+form textarea:focus {
+  border-bottom: 0.0625rem solid #5a5a5a;
+  outline: none;
+}
+form textarea {
+  resize: vertical;
+  min-height: 2rem;
+  max-height: 4.1rem;
+  scrollbar-width: thin;
+}
+form textarea::-webkit-scrollbar {
+  width: 0.3rem;
+}
+form textarea::-webkit-scrollbar-track {
+  background: rgb(230, 230, 230);
+}
+form textarea::-webkit-scrollbar-thumb {
+  background: rgb(194, 194, 194);
+  border: 0.0625rem solid transparent;
+}
+form input[type=submit] {
+  margin-top: 1.5rem;
+  background-color: #1e1e20;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  font-size: 0.5rem;
+  cursor: pointer;
+  border-bottom: none;
+  transition: box-shadow 0.1s ease-in-out;
+}
+form input[type=submit]:hover {
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu .icon {
+  position: absolute;
+  top: 1rem;
+  width: 70%;
+}
+@media screen and (max-width: 860px) {
+  .menu .icon {
+    height: 100%;
+    position: relative;
+    left: 1rem;
+    top: 0;
+  }
+  .menu svg {
+    height: 100%;
+  }
+}
+.menu .menu-icon {
+  height: 2.5rem;
+  width: 100%;
+  background-color: #ffdf3c;
+  transition: color 0.1s ease-in-out;
+}
+.menu .menu-icon svg {
+  width: 60%;
+}
+.menu .menu-icon:hover {
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.social .logos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16%;
+  gap: 1.5rem;
+}
+.social .logos .icon {
+  height: 1rem;
+  width: 1rem;
+  text-align: center;
+}
+.social .logos .icon svg {
+  height: 100%;
+  transition: fill 0.1s ease-in-out;
+}
+.social .logos .icon:hover svg {
+  fill: #fff;
+}
+body .first-page .intro .intro-text button:hover {
+  background-color: #52b788;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  padding: 1.875rem;
+  cursor: default;
+  position: relative;
+}
+.info::before {
+  position: absolute;
+  content: "";
+  top: -0.9375rem;
+  left: -0.9375rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  z-index: 100;
+  background-color: #ffdf3c;
+}
+@media screen and (max-width: 720px) {
+  .info::before {
+    top: -0.9375rem;
+    left: 0rem;
+  }
+}
+.info h2 {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.info .info-item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+.info .info-item .icon {
+  width: 1.5rem;
+}
+.info .info-item .icon svg path {
+  fill: #fff;
+}
+.info .info-item #circles-1,
+.info .info-item #circles-2,
+.info .info-item #circles-3 {
+  fill: #fff;
+}
+.info .info-item a,
+.info .info-item p {
+  padding: 0.625rem;
+  width: 100%;
+}
+
+.pop {
+  position: absolute;
+  width: 80%;
+  height: 60%;
+  background-color: #fff;
+  border: 6px solid #ffdf3c;
+  z-index: 1000000000000000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pop .loader {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #1e1e20;
+  border-radius: 50% 50% 50% 0;
+  animation: rotate 1s linear infinite;
+  margin-bottom: 24px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.pop .response {
+  font-size: 1rem;
+  color: #1e1e20;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.container {
+  box-shadow: 0 3.75rem 7.5rem -1.875rem rgba(0, 0, 0, 0.4);
+  position: relative;
+  background-color: #fff;
+}
+
+.menu {
+  width: 2.625rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.form {
+  width: 34.875rem;
+  height: 25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social {
+  width: 8rem;
+  height: 25rem;
+  background-color: #ffdf3c;
+}
+
+.info {
+  position: absolute;
+  width: 18.75rem;
+  height: 17.625rem;
+  background-color: #1e1e20;
+  right: 0;
+}
+
+@media screen and (max-width: 860px) {
+  html {
+    font-size: 18px;
+  }
+  body {
+    align-items: flex-start;
+  }
+  .container {
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .menu {
+    width: 100%;
+    height: 4.5rem;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu .menu-icon {
+    width: 40%;
+  }
+  .social {
+    flex-direction: row;
+    height: 6rem;
+    width: 100%;
+    padding: 0 30%;
+  }
+  .social .logos {
+    padding: 0 1rem;
+  }
+  .form {
+    width: 100%;
+  }
+  .info {
+    height: 20rem;
+    top: calc(50% - 10rem);
+  }
+  .pop {
+    width: 80%;
+    height: 50vh;
+    top: 25vh;
+  }
+  .pop .response {
+    padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 18px;
+  }
+  .form {
+    width: 100%;
+    margin: 2rem 0;
+    height: 100%;
+  }
+  .form form {
+    width: 100%;
+    margin: 0;
+    padding: 0 4rem;
+  }
+  .form form input {
+    margin-bottom: 1.25rem;
+  }
+  .form form textarea {
+    min-height: 8rem;
+    max-height: 8rem;
+    resize: none;
+  }
+  .form form input[type=submit] {
+    margin-top: 2rem;
+  }
+  .info {
+    position: relative;
+    width: 100%;
+    padding: 1.875rem 4rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .form form {
+    padding: 0 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */
